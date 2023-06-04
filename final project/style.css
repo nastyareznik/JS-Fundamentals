@@ -6,29 +6,24 @@
   margin: auto;
   justify-content: center;
   align-items: center;
+  background-color: #ffc0cb;
 }
 
 .target {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: rgb(223, 76, 76);
   cursor: pointer;
-  border-radius: 50%;
-  background-image: url(/img/target.png);
-}
-
-.bullet {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: black;
+  background-image: url(../img/cat-face.png);
+  background-size: contain;
 }
 
 #stats {
   margin-top: 10px;
   font-size: 18px;
   text-align: center;
+  font-family: "Dangrek", cursive;
+  color: white;
 }
 
 #level-buttons {
@@ -40,22 +35,30 @@ button {
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #ffc0cb;
+  color: rgb(109, 96, 114);
+  font-family: "Dangrek", cursive;
 }
 
 h1 {
-  color: red;
-  background-color: #000;
+  color: white;
+  background-color: rgb(168, 149, 176);
   margin: auto;
   align-items: center;
   text-align: center;
+  max-width: 260px;
+  border-color: darkgray;
+  border-width: 5px;
+  font-family: "Dangrek", cursive;
 }
 body {
-  background-color: gray;
+  background-color: rgb(168, 149, 176);
 }
 #playbtn {
-  background-color: #000;
-  color: crimson;
+  background-color: #ffc0cb;
+  color: rgb(109, 96, 114);
   margin: auto;
+  font-family: "Dangrek", cursive;
 }
 #play-btn {
   align-items: center;
@@ -70,5 +73,15 @@ body {
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
+  font-family: "Dangrek", cursive;
 }
-
+.result {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Dangrek", cursive;
+}
