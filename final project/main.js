@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.intervalId = null;
       this.gameOver = false;
     }
-
+// початок гри
     startGame() {
       this.score = 0;
       this.gameContainer.innerHTML = "";
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         this.showGameOverMessage();
       }, 30000);
     }
-
+// створення цілі 
     createTarget() {
       if (!this.gameOver) {
         const target = document.createElement("div");
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateStats() {
       document.getElementById("lives").innerText = "Lives: " + this.lives;
     }
-
+// завершення гри
     showGameOverMessage() {
       if (this.gameOver) {
         const result = document.createElement("div");
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const game = new Game();
   game.startGame();
-
+// рівні складності
   document.getElementById("easy-btn").addEventListener("click", function () {
     game.level = "Easy";
     game.speed = 2000;
